@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                             viewModel.updateTaskStatus(task, completed)
                         },
                         onDeleteTask = { task -> viewModel.deleteTask(task) },
-                        // MODIFIKASI: Teruskan fungsi edit dari viewmodel
+            
                         onEditTask = { task, newTitle ->
                             viewModel.updateTaskTitle(task, newTitle)
                         }
